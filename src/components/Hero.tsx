@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         setIsTypingComplete(true);
         clearInterval(typingInterval);
       }
-    }, 45); // slightly smoother typing
+    }, 45);
     return () => clearInterval(typingInterval);
   }, []);
 
@@ -31,7 +31,6 @@ const Hero: React.FC = () => {
       aria-label="Introduction Section"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background gradient + floating light orbs */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 light:bg-gradient-to-br light:from-slate-50 light:via-white light:to-slate-100 transition-colors duration-500">
         <div className="absolute inset-0 opacity-30 light:opacity-20">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/30 light:bg-cyan-400/20 rounded-full filter blur-3xl animate-pulse" />
@@ -89,8 +88,8 @@ const Hero: React.FC = () => {
             variant="primary"
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/Aya_OUAHI_CV.pdf';
-              link.download = 'Aya_OUAHI_CV.pdf';
+              link.href = '/CV-Aya-OUAHI.pdf';
+              link.download = 'CV-Aya-OUAHI.pdf';
               link.click();
             }}
           >
